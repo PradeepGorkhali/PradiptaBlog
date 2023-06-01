@@ -178,7 +178,7 @@ exports.login = async (req, res, next) => {
 
         res.status(200).json({
           success: true,
-          token: token,
+          //   token: token,
           authdata: ({
             avatar,
             username,
@@ -252,7 +252,7 @@ exports.changepassword = async (req, res, next) => {
         await OTPCheck.remove();
         res.status(200).json({
           success: true,
-          token,
+          //   token,
           authdata: ({
             avatar,
             username,
@@ -359,7 +359,7 @@ exports.twoFactorOtpVerify = async (req, res, next) => {
       await twofactorOTP.remove();
       res.status(200).json({
         success: true,
-        token,
+        // token,
         authdata: ({
           avatar,
           username,
