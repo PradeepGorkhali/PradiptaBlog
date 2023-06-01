@@ -71,7 +71,7 @@ export const FetchData = async (endpoint, { body, ...customConfig } = {}) => {
 
   const config = {
     method: body ? "POST" : "GET",
-    url: `https://cute-blue-walkingstick-coat.cyclic.app/api/v1${endpoint}`,
+    url: `http://localhost:55000/api/v1${endpoint}`,
     ...customConfig,
     headers: {
       ...headers,
